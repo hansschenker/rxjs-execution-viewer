@@ -1,0 +1,389 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="rx-root" width="1280" height="1837" viewBox="0 0 1280 1837" role="group" aria-labelledby="rx-rxsnapshot-title rx-rxsnapshot-description" data-trace-id="sync-take">
+    <title id="rx-rxsnapshot-title">One moment, many reactions — execution at step 30, 0 ms</title>
+    <desc id="rx-rxsnapshot-description">A fixed pipeline graph and four synchronized lanes: time, source notifications, internal reactions, and resulting notifications. Dashed glyphs identify modelled explanations; solid glyphs identify observed events. Events at one time retain their sequence order. Subscription endings distinguish completion from cancellation.</desc>
+    <defs><style>
+  .rx-root,.rx-scene { color:#203d35; font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+  .rx-paper { fill:#fffefa; }
+  .rx-band { fill:#f6f7f2; }
+  .rx-rule { stroke:#dfe5da; stroke-width:1; }
+  .rx-grid { stroke:#dfe5da; stroke-width:1; stroke-dasharray:3 5; }
+  .rx-overline { fill:#61756a; font-size:10px; font-weight:750; letter-spacing:1.7px; }
+  .rx-heading { fill:#203d35; font-size:16px; font-weight:700; }
+  .rx-small { fill:#65776c; font-size:11px; }
+  .rx-mono { font-family:"IBM Plex Mono","SFMono-Regular",Consolas,"Liberation Mono",monospace; }
+  .rx-time { fill:#5d7266; font-size:10px; }
+  .rx-edge { fill:none; stroke:#96aca0; stroke-width:1.6; }
+  .rx-edge-label { fill:#72847a; font-size:10px; }
+  .rx-node { cursor:pointer; outline:none; }
+  .rx-node-box { fill:#ffffff; stroke:#cbd8cc; stroke-width:1.2; }
+  .rx-node-source .rx-node-box { fill:#f0f7f0; }
+  .rx-node-sink .rx-node-box { fill:#eaf5f0; }
+  .rx-node:hover .rx-node-box,.rx-node:focus .rx-node-box { stroke:#24624e; stroke-width:2.5; }
+  .rx-node-selected .rx-node-box { stroke:#235d49; stroke-width:2.5; }
+  .rx-node-current .rx-node-box { fill:#fff6e7; stroke:#c27a39; stroke-width:2; }
+  .rx-node-label { fill:#173d31; font-size:14px; font-weight:700; }
+  .rx-node-kind { fill:#657b6c; font-size:9px; font-weight:750; letter-spacing:1.2px; }
+  .rx-node-state { fill:#456654; font-size:10px; }
+  .rx-node-id { fill:#789084; font-size:9px; }
+  .rx-pill { fill:#eaf0e7; }
+  .rx-pill-label { fill:#4d6a59; font-size:9px; font-weight:600; }
+  .rx-lane-title { fill:#274638; font-size:13px; font-weight:700; }
+  .rx-lane-desc { fill:#738478; font-size:10px; }
+  .rx-event { cursor:pointer; outline:none; }
+  .rx-event-hit { fill:transparent; }
+  .rx-event-focus { fill:#edf3e5; stroke:#d0dfbf; stroke-width:1; opacity:0; }
+  .rx-event:hover .rx-event-focus,.rx-event:focus .rx-event-focus { opacity:1; }
+  .rx-event-current .rx-event-focus { opacity:1; fill:#fff0d6; stroke:#dcaa6b; }
+  .rx-event-label { fill:#244438; font-size:11px; font-weight:600; }
+  .rx-event-seq { fill:#6d8072; font-size:9px; }
+  .rx-source-ink { fill:#3c805d; stroke:#3c805d; }
+  .rx-internal-ink { fill:#cb843e; stroke:#b57531; }
+  .rx-result-ink { fill:#197771; stroke:#197771; }
+  .rx-error-ink { fill:#ba4b43; stroke:#ba4b43; }
+  .rx-modelled { stroke-dasharray:3 2; }
+  .rx-stem { stroke:#cbd6cb; stroke-width:1; }
+  .rx-cursor { stroke:#bb7634; stroke-width:1.5; stroke-dasharray:5 4; }
+  .rx-cursor-pill { fill:#244b39; }
+  .rx-cursor-label { fill:#fffef8; font-size:10px; font-weight:650; }
+  .rx-life { stroke:#69987c; stroke-width:4; stroke-linecap:round; }
+  .rx-life-live { stroke:#69987c; stroke-dasharray:4 5; }
+  .rx-life-ended { stroke:#93aa98; }
+  .rx-life-cancelled { stroke:#b58149; }
+  .rx-life-error { stroke:#ba4b43; }
+  .rx-life-label { fill:#355a43; font-size:10px; }
+  .rx-life-detail { fill:#6f8274; font-size:9px; }
+  .rx-footer { fill:#6e8174; font-size:10px; }
+</style><marker id="rx-rxsnapshot-arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 8 4 L 0 8 z" fill="#96aca0"/></marker></defs>
+    <g class="rx-scene"><rect class="rx-paper" width="1280" height="1837" rx="16"/>
+    <text class="rx-overline" x="34" y="29">01 / PIPELINE TOPOLOGY</text>
+    <text class="rx-small" x="1246" y="29" text-anchor="end">Fixed connections · inspect a node</text>
+    <path class="rx-edge" data-edge-id="source-filter" d="M 275 109 H 290" marker-end="url(#rx-rxsnapshot-arrow)"><title>source to filter</title></path><path class="rx-edge" data-edge-id="filter-map" d="M 511 109 H 526" marker-end="url(#rx-rxsnapshot-arrow)"><title>filter to map</title></path><path class="rx-edge" data-edge-id="map-take" d="M 747 109 H 762" marker-end="url(#rx-rxsnapshot-arrow)"><title>map to take</title></path><path class="rx-edge" data-edge-id="take-sink" d="M 983 109 H 998" marker-end="url(#rx-rxsnapshot-arrow)"><title>take to sink</title></path><g class="rx-node rx-node-source rx-node-current" transform="translate(61 66)" data-node-id="source" role="button" tabindex="0" aria-label="Inspect of(1, 2, 3, 4, 5). A synchronous cold source. Early teardown stops production after 3.. unsubscribe · cancelled. Values enter here">
+    <title>of(1, 2, 3, 4, 5): A synchronous cold source. Early teardown stops production after 3.</title>
+    <rect class="rx-node-box" width="214" height="86" rx="12"/>
+    <text class="rx-node-kind" x="15" y="19">SOURCE</text>
+    <text class="rx-node-id rx-mono" x="199" y="19" text-anchor="end">source</text>
+    <text class="rx-node-label rx-mono" x="15" y="41">of(1, 2, 3, 4, 5)</text>
+    <text class="rx-node-state rx-mono" x="15" y="60">Values enter here</text>
+    <circle cx="17" cy="75" r="2.5" fill="#648b66"/>
+    <text class="rx-pill-label" x="25" y="78">unsubscribe · cancelled</text>
+
+  </g><g class="rx-node rx-node-operator" transform="translate(297 66)" data-node-id="filter" role="button" tabindex="0" aria-label="Inspect filter(isOdd). The named domain predicate accepts odd numbers.. unsubscribe · cancelled. input=3 · accepted=true">
+    <title>filter(isOdd): The named domain predicate accepts odd numbers.</title>
+    <rect class="rx-node-box" width="214" height="86" rx="12"/>
+    <text class="rx-node-kind" x="15" y="19">OPERATOR</text>
+    <text class="rx-node-id rx-mono" x="199" y="19" text-anchor="end">filter</text>
+    <text class="rx-node-label rx-mono" x="15" y="41">filter(isOdd)</text>
+    <text class="rx-node-state rx-mono" x="15" y="60">input=3 · accepted=true</text>
+    <circle cx="17" cy="75" r="2.5" fill="#648b66"/>
+    <text class="rx-pill-label" x="25" y="78">unsubscribe · cancelled</text>
+    <text class="rx-node-id" x="199" y="78" text-anchor="end">modelled</text>
+  </g><g class="rx-node rx-node-operator" transform="translate(533 66)" data-node-id="map" role="button" tabindex="0" aria-label="Inspect map(timesTen). A synchronous value transformation, with no queue or separate worker.. unsubscribe · cancelled. Reacts to notifications">
+    <title>map(timesTen): A synchronous value transformation, with no queue or separate worker.</title>
+    <rect class="rx-node-box" width="214" height="86" rx="12"/>
+    <text class="rx-node-kind" x="15" y="19">OPERATOR</text>
+    <text class="rx-node-id rx-mono" x="199" y="19" text-anchor="end">map</text>
+    <text class="rx-node-label rx-mono" x="15" y="41">map(timesTen)</text>
+    <text class="rx-node-state rx-mono" x="15" y="60">Reacts to notifications</text>
+    <circle cx="17" cy="75" r="2.5" fill="#648b66"/>
+    <text class="rx-pill-label" x="25" y="78">unsubscribe · cancelled</text>
+
+  </g><g class="rx-node rx-node-operator" transform="translate(769 66)" data-node-id="take" role="button" tabindex="0" aria-label="Inspect take(2). Complete after two accepted values and tear down upstream.. unsubscribe · complete. accepted=2 · limit=2">
+    <title>take(2): Complete after two accepted values and tear down upstream.</title>
+    <rect class="rx-node-box" width="214" height="86" rx="12"/>
+    <text class="rx-node-kind" x="15" y="19">OPERATOR</text>
+    <text class="rx-node-id rx-mono" x="199" y="19" text-anchor="end">take</text>
+    <text class="rx-node-label rx-mono" x="15" y="41">take(2)</text>
+    <text class="rx-node-state rx-mono" x="15" y="60">accepted=2 · limit=2</text>
+    <circle cx="17" cy="75" r="2.5" fill="#648b66"/>
+    <text class="rx-pill-label" x="25" y="78">unsubscribe · complete</text>
+    <text class="rx-node-id" x="199" y="78" text-anchor="end">modelled</text>
+  </g><g class="rx-node rx-node-sink" transform="translate(1005 66)" data-node-id="sink" role="button" tabindex="0" aria-label="Inspect Observer. Receives 10, 30, Complete, all at time 0. Sequence numbers preserve their ordering.. unsubscribe · complete. Subscriber receives">
+    <title>Observer: Receives 10, 30, Complete, all at time 0. Sequence numbers preserve their ordering.</title>
+    <rect class="rx-node-box" width="214" height="86" rx="12"/>
+    <text class="rx-node-kind" x="15" y="19">SINK</text>
+    <text class="rx-node-id rx-mono" x="199" y="19" text-anchor="end">sink</text>
+    <text class="rx-node-label rx-mono" x="15" y="41">Observer</text>
+    <text class="rx-node-state rx-mono" x="15" y="60">Subscriber receives</text>
+    <circle cx="17" cy="75" r="2.5" fill="#648b66"/>
+    <text class="rx-pill-label" x="25" y="78">unsubscribe · complete</text>
+
+  </g>
+    <line class="rx-rule" x1="34" x2="1246" y1="200" y2="200"/>
+    <text class="rx-overline" x="34" y="230">02 / EXECUTION OVER TIME</text>
+    <text class="rx-small" x="1246" y="230" text-anchor="end">Solid = observed · dashed = modelled · # = step order</text>
+    <text class="rx-lane-title" x="35" y="274">Timeline</text>
+    <text class="rx-lane-desc" x="35" y="291">Virtual clock · ms</text>
+    <line class="rx-rule" x1="228" x2="1125" y1="270" y2="270"/><line class="rx-rule" x1="228" x2="228" y1="266" y2="275"/><text class="rx-time rx-mono" x="228" y="259" text-anchor="middle">0</text><line class="rx-rule" x1="377.5" x2="377.5" y1="266" y2="275"/><text class="rx-time rx-mono" x="377.5" y="259" text-anchor="middle">0.17</text><line class="rx-rule" x1="527" x2="527" y1="266" y2="275"/><text class="rx-time rx-mono" x="527" y="259" text-anchor="middle">0.33</text><line class="rx-rule" x1="676.5" x2="676.5" y1="266" y2="275"/><text class="rx-time rx-mono" x="676.5" y="259" text-anchor="middle">0.5</text><line class="rx-rule" x1="826" x2="826" y1="266" y2="275"/><text class="rx-time rx-mono" x="826" y="259" text-anchor="middle">0.67</text><line class="rx-rule" x1="975.5" x2="975.5" y1="266" y2="275"/><text class="rx-time rx-mono" x="975.5" y="259" text-anchor="middle">0.83</text><line class="rx-rule" x1="1125" x2="1125" y1="266" y2="275"/><text class="rx-time rx-mono" x="1125" y="259" text-anchor="middle">1</text>
+    <line class="rx-rule" x1="34" x2="1246" y1="299" y2="299"/>
+    <text class="rx-lane-title" x="35" y="327">Source emissions</text>
+    <text class="rx-lane-desc" x="35" y="344">What arrives</text><line class="rx-grid" x1="228" x2="228" y1="304" y2="508"/><line class="rx-grid" x1="377.5" x2="377.5" y1="304" y2="508"/><line class="rx-grid" x1="527" x2="527" y1="304" y2="508"/><line class="rx-grid" x1="676.5" x2="676.5" y1="304" y2="508"/><line class="rx-grid" x1="826" x2="826" y1="304" y2="508"/><line class="rx-grid" x1="975.5" x2="975.5" y1="304" y2="508"/><line class="rx-grid" x1="1125" x2="1125" y1="304" y2="508"/><g class="rx-event" transform="translate(228 325)" data-event-seq="5" role="button" tabindex="0" aria-label="Step 6 at 0. source: Source. subscribe. observed">
+    <title>Step 6 at 0. source: Source. subscribe. observed</title>
+    <rect class="rx-event-hit" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <rect class="rx-event-focus" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <circle class="rx-source-ink" cx="0" cy="-3" r="7" fill-opacity="0.08" stroke-width="1.5"/><path class="rx-source-ink" d="M -3 -3 H 3 M 0 -6 V 0" fill="none" stroke-width="1.5"/>
+    <text class="rx-event-label rx-mono" x="14" y="0">Source</text>
+    <text class="rx-event-seq rx-mono" x="14" y="13">#6 · source</text>
+  </g><g class="rx-event" transform="translate(228 362)" data-event-seq="6" role="button" tabindex="0" aria-label="Step 7 at 0. source: Source. next. observed. Value 1">
+    <title>Step 7 at 0. source: Source. next. observed. Value 1</title>
+    <rect class="rx-event-hit" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <rect class="rx-event-focus" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <circle class="rx-source-ink" cx="0" cy="-3" r="6" fill-opacity="1" stroke-width="1.5"/>
+    <text class="rx-event-label rx-mono" x="14" y="0">1</text>
+    <text class="rx-event-seq rx-mono" x="14" y="13">#7 · source</text>
+  </g><g class="rx-event" transform="translate(228 399)" data-event-seq="13" role="button" tabindex="0" aria-label="Step 14 at 0. source: Source. next. observed. Value 2">
+    <title>Step 14 at 0. source: Source. next. observed. Value 2</title>
+    <rect class="rx-event-hit" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <rect class="rx-event-focus" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <circle class="rx-source-ink" cx="0" cy="-3" r="6" fill-opacity="1" stroke-width="1.5"/>
+    <text class="rx-event-label rx-mono" x="14" y="0">2</text>
+    <text class="rx-event-seq rx-mono" x="14" y="13">#14 · source</text>
+  </g><g class="rx-event" transform="translate(228 436)" data-event-seq="15" role="button" tabindex="0" aria-label="Step 16 at 0. source: Source. next. observed. Value 3">
+    <title>Step 16 at 0. source: Source. next. observed. Value 3</title>
+    <rect class="rx-event-hit" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <rect class="rx-event-focus" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <circle class="rx-source-ink" cx="0" cy="-3" r="6" fill-opacity="1" stroke-width="1.5"/>
+    <text class="rx-event-label rx-mono" x="14" y="0">3</text>
+    <text class="rx-event-seq rx-mono" x="14" y="13">#16 · source</text>
+  </g><g class="rx-event rx-event-current" transform="translate(228 473)" data-event-seq="29" role="button" tabindex="0" aria-label="Step 30 at 0. source: Source. unsubscribe. observed">
+    <title>Step 30 at 0. source: Source. unsubscribe. observed</title>
+    <rect class="rx-event-hit" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <rect class="rx-event-focus" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <circle class="rx-source-ink" cx="0" cy="-3" r="7" fill-opacity="0.05" stroke-width="1"/><path class="rx-source-ink" d="M -3 -6 L 3 0 M 3 -6 L -3 0" fill="none" stroke-width="1.5"/>
+    <text class="rx-event-label rx-mono" x="14" y="0">Source</text>
+    <text class="rx-event-seq rx-mono" x="14" y="13">#30 · source</text>
+  </g><rect class="rx-band" x="20" y="513" width="1240" height="769" rx="8"/>
+    <line class="rx-rule" x1="34" x2="1246" y1="513" y2="513"/>
+    <text class="rx-lane-title" x="35" y="541">Internal reactions</text>
+    <text class="rx-lane-desc" x="35" y="558">How the operator reacts</text><line class="rx-grid" x1="228" x2="228" y1="518" y2="1277"/><line class="rx-grid" x1="377.5" x2="377.5" y1="518" y2="1277"/><line class="rx-grid" x1="527" x2="527" y1="518" y2="1277"/><line class="rx-grid" x1="676.5" x2="676.5" y1="518" y2="1277"/><line class="rx-grid" x1="826" x2="826" y1="518" y2="1277"/><line class="rx-grid" x1="975.5" x2="975.5" y1="518" y2="1277"/><line class="rx-grid" x1="1125" x2="1125" y1="518" y2="1277"/><g class="rx-event" transform="translate(228 539)" data-event-seq="1" role="button" tabindex="0" aria-label="Step 2 at 0. take: Take output. subscribe. observed">
+    <title>Step 2 at 0. take: Take output. subscribe. observed</title>
+    <rect class="rx-event-hit" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <rect class="rx-event-focus" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <circle class="rx-internal-ink" cx="0" cy="-3" r="7" fill-opacity="0.08" stroke-width="1.5"/><path class="rx-internal-ink" d="M -3 -3 H 3 M 0 -6 V 0" fill="none" stroke-width="1.5"/>
+    <text class="rx-event-label rx-mono" x="14" y="0">Take output</text>
+    <text class="rx-event-seq rx-mono" x="14" y="13">#2 · take</text>
+  </g><g class="rx-event" transform="translate(228 576)" data-event-seq="2" role="button" tabindex="0" aria-label="Step 3 at 0. take: Ready to accept two values. state. modelled">
+    <title>Step 3 at 0. take: Ready to accept two values. state. modelled</title>
+    <rect class="rx-event-hit" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <rect class="rx-event-focus" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <path class="rx-internal-ink rx-modelled" d="M 0 -11 L 8 -3 L 0 5 L -8 -3 Z" fill-opacity="0.12" stroke-width="1.5"/>
+    <text class="rx-event-label rx-mono" x="14" y="0">Ready to accept two…</text>
+    <text class="rx-event-seq rx-mono" x="14" y="13">#3 · model · take</text>
+  </g><g class="rx-event" transform="translate(228 613)" data-event-seq="3" role="button" tabindex="0" aria-label="Step 4 at 0. map: Map output. subscribe. observed">
+    <title>Step 4 at 0. map: Map output. subscribe. observed</title>
+    <rect class="rx-event-hit" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <rect class="rx-event-focus" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <circle class="rx-internal-ink" cx="0" cy="-3" r="7" fill-opacity="0.08" stroke-width="1.5"/><path class="rx-internal-ink" d="M -3 -3 H 3 M 0 -6 V 0" fill="none" stroke-width="1.5"/>
+    <text class="rx-event-label rx-mono" x="14" y="0">Map output</text>
+    <text class="rx-event-seq rx-mono" x="14" y="13">#4 · map</text>
+  </g><g class="rx-event" transform="translate(228 650)" data-event-seq="4" role="button" tabindex="0" aria-label="Step 5 at 0. filter: Filter output. subscribe. observed">
+    <title>Step 5 at 0. filter: Filter output. subscribe. observed</title>
+    <rect class="rx-event-hit" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <rect class="rx-event-focus" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <circle class="rx-internal-ink" cx="0" cy="-3" r="7" fill-opacity="0.08" stroke-width="1.5"/><path class="rx-internal-ink" d="M -3 -3 H 3 M 0 -6 V 0" fill="none" stroke-width="1.5"/>
+    <text class="rx-event-label rx-mono" x="14" y="0">Filter output</text>
+    <text class="rx-event-seq rx-mono" x="14" y="13">#5 · filter</text>
+  </g><g class="rx-event" transform="translate(228 687)" data-event-seq="7" role="button" tabindex="0" aria-label="Step 8 at 0. filter: Accept 1: odd. state. modelled">
+    <title>Step 8 at 0. filter: Accept 1: odd. state. modelled</title>
+    <rect class="rx-event-hit" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <rect class="rx-event-focus" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <path class="rx-internal-ink rx-modelled" d="M 0 -11 L 8 -3 L 0 5 L -8 -3 Z" fill-opacity="0.12" stroke-width="1.5"/>
+    <text class="rx-event-label rx-mono" x="14" y="0">Accept 1: odd</text>
+    <text class="rx-event-seq rx-mono" x="14" y="13">#8 · model · filter</text>
+  </g><g class="rx-event" transform="translate(228 724)" data-event-seq="8" role="button" tabindex="0" aria-label="Step 9 at 0. filter: Filter output. next. observed. Value 1">
+    <title>Step 9 at 0. filter: Filter output. next. observed. Value 1</title>
+    <rect class="rx-event-hit" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <rect class="rx-event-focus" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <circle class="rx-internal-ink" cx="0" cy="-3" r="6" fill-opacity="1" stroke-width="1.5"/>
+    <text class="rx-event-label rx-mono" x="14" y="0">1</text>
+    <text class="rx-event-seq rx-mono" x="14" y="13">#9 · filter</text>
+  </g><g class="rx-event" transform="translate(228 761)" data-event-seq="9" role="button" tabindex="0" aria-label="Step 10 at 0. map: Map output. next. observed. Value 10">
+    <title>Step 10 at 0. map: Map output. next. observed. Value 10</title>
+    <rect class="rx-event-hit" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <rect class="rx-event-focus" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <circle class="rx-internal-ink" cx="0" cy="-3" r="6" fill-opacity="1" stroke-width="1.5"/>
+    <text class="rx-event-label rx-mono" x="14" y="0">10</text>
+    <text class="rx-event-seq rx-mono" x="14" y="13">#10 · map</text>
+  </g><g class="rx-event" transform="translate(228 798)" data-event-seq="10" role="button" tabindex="0" aria-label="Step 11 at 0. take: Accept value 1 of 2. state. modelled">
+    <title>Step 11 at 0. take: Accept value 1 of 2. state. modelled</title>
+    <rect class="rx-event-hit" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <rect class="rx-event-focus" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <path class="rx-internal-ink rx-modelled" d="M 0 -11 L 8 -3 L 0 5 L -8 -3 Z" fill-opacity="0.12" stroke-width="1.5"/>
+    <text class="rx-event-label rx-mono" x="14" y="0">Accept value 1 of 2</text>
+    <text class="rx-event-seq rx-mono" x="14" y="13">#11 · model · take</text>
+  </g><g class="rx-event" transform="translate(228 835)" data-event-seq="11" role="button" tabindex="0" aria-label="Step 12 at 0. take: Take output. next. observed. Value 10">
+    <title>Step 12 at 0. take: Take output. next. observed. Value 10</title>
+    <rect class="rx-event-hit" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <rect class="rx-event-focus" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <circle class="rx-internal-ink" cx="0" cy="-3" r="6" fill-opacity="1" stroke-width="1.5"/>
+    <text class="rx-event-label rx-mono" x="14" y="0">10</text>
+    <text class="rx-event-seq rx-mono" x="14" y="13">#12 · take</text>
+  </g><g class="rx-event" transform="translate(228 872)" data-event-seq="14" role="button" tabindex="0" aria-label="Step 15 at 0. filter: Drop 2: even. state. modelled">
+    <title>Step 15 at 0. filter: Drop 2: even. state. modelled</title>
+    <rect class="rx-event-hit" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <rect class="rx-event-focus" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <path class="rx-internal-ink rx-modelled" d="M 0 -11 L 8 -3 L 0 5 L -8 -3 Z" fill-opacity="0.12" stroke-width="1.5"/>
+    <text class="rx-event-label rx-mono" x="14" y="0">Drop 2: even</text>
+    <text class="rx-event-seq rx-mono" x="14" y="13">#15 · model · filter</text>
+  </g><g class="rx-event" transform="translate(228 909)" data-event-seq="16" role="button" tabindex="0" aria-label="Step 17 at 0. filter: Accept 3: odd. state. modelled">
+    <title>Step 17 at 0. filter: Accept 3: odd. state. modelled</title>
+    <rect class="rx-event-hit" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <rect class="rx-event-focus" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <path class="rx-internal-ink rx-modelled" d="M 0 -11 L 8 -3 L 0 5 L -8 -3 Z" fill-opacity="0.12" stroke-width="1.5"/>
+    <text class="rx-event-label rx-mono" x="14" y="0">Accept 3: odd</text>
+    <text class="rx-event-seq rx-mono" x="14" y="13">#17 · model · filter</text>
+  </g><g class="rx-event" transform="translate(228 946)" data-event-seq="17" role="button" tabindex="0" aria-label="Step 18 at 0. filter: Filter output. next. observed. Value 3">
+    <title>Step 18 at 0. filter: Filter output. next. observed. Value 3</title>
+    <rect class="rx-event-hit" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <rect class="rx-event-focus" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <circle class="rx-internal-ink" cx="0" cy="-3" r="6" fill-opacity="1" stroke-width="1.5"/>
+    <text class="rx-event-label rx-mono" x="14" y="0">3</text>
+    <text class="rx-event-seq rx-mono" x="14" y="13">#18 · filter</text>
+  </g><g class="rx-event" transform="translate(228 983)" data-event-seq="18" role="button" tabindex="0" aria-label="Step 19 at 0. map: Map output. next. observed. Value 30">
+    <title>Step 19 at 0. map: Map output. next. observed. Value 30</title>
+    <rect class="rx-event-hit" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <rect class="rx-event-focus" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <circle class="rx-internal-ink" cx="0" cy="-3" r="6" fill-opacity="1" stroke-width="1.5"/>
+    <text class="rx-event-label rx-mono" x="14" y="0">30</text>
+    <text class="rx-event-seq rx-mono" x="14" y="13">#19 · map</text>
+  </g><g class="rx-event" transform="translate(228 1020)" data-event-seq="19" role="button" tabindex="0" aria-label="Step 20 at 0. take: Accept value 2 of 2. state. modelled">
+    <title>Step 20 at 0. take: Accept value 2 of 2. state. modelled</title>
+    <rect class="rx-event-hit" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <rect class="rx-event-focus" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <path class="rx-internal-ink rx-modelled" d="M 0 -11 L 8 -3 L 0 5 L -8 -3 Z" fill-opacity="0.12" stroke-width="1.5"/>
+    <text class="rx-event-label rx-mono" x="14" y="0">Accept value 2 of 2</text>
+    <text class="rx-event-seq rx-mono" x="14" y="13">#20 · model · take</text>
+  </g><g class="rx-event" transform="translate(228 1057)" data-event-seq="20" role="button" tabindex="0" aria-label="Step 21 at 0. take: Take output. next. observed. Value 30">
+    <title>Step 21 at 0. take: Take output. next. observed. Value 30</title>
+    <rect class="rx-event-hit" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <rect class="rx-event-focus" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <circle class="rx-internal-ink" cx="0" cy="-3" r="6" fill-opacity="1" stroke-width="1.5"/>
+    <text class="rx-event-label rx-mono" x="14" y="0">30</text>
+    <text class="rx-event-seq rx-mono" x="14" y="13">#21 · take</text>
+  </g><g class="rx-event" transform="translate(228 1094)" data-event-seq="22" role="button" tabindex="0" aria-label="Step 23 at 0. take: Take output. complete. observed">
+    <title>Step 23 at 0. take: Take output. complete. observed</title>
+    <rect class="rx-event-hit" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <rect class="rx-event-focus" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <circle class="rx-internal-ink" cx="0" cy="-3" r="7" fill-opacity="0.08" stroke-width="1.5"/><path class="rx-internal-ink" d="M -3 -3 L -1 -1 L 4 -6" fill="none" stroke-width="1.5"/>
+    <text class="rx-event-label rx-mono" x="14" y="0">Take output</text>
+    <text class="rx-event-seq rx-mono" x="14" y="13">#23 · take</text>
+  </g><g class="rx-event" transform="translate(228 1131)" data-event-seq="23" role="button" tabindex="0" aria-label="Step 24 at 0. take: Limit reached: complete and tear down upstream. state. modelled">
+    <title>Step 24 at 0. take: Limit reached: complete and tear down upstream. state. modelled</title>
+    <rect class="rx-event-hit" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <rect class="rx-event-focus" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <path class="rx-internal-ink rx-modelled" d="M 0 -11 L 8 -3 L 0 5 L -8 -3 Z" fill-opacity="0.12" stroke-width="1.5"/>
+    <text class="rx-event-label rx-mono" x="14" y="0">Limit reached: comp…</text>
+    <text class="rx-event-seq rx-mono" x="14" y="13">#24 · model · take</text>
+  </g><g class="rx-event" transform="translate(228 1168)" data-event-seq="26" role="button" tabindex="0" aria-label="Step 27 at 0. take: Take output. unsubscribe. observed">
+    <title>Step 27 at 0. take: Take output. unsubscribe. observed</title>
+    <rect class="rx-event-hit" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <rect class="rx-event-focus" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <circle class="rx-internal-ink" cx="0" cy="-3" r="7" fill-opacity="0.05" stroke-width="1"/><path class="rx-internal-ink" d="M -3 -6 L 3 0 M 3 -6 L -3 0" fill="none" stroke-width="1.5"/>
+    <text class="rx-event-label rx-mono" x="14" y="0">Take output</text>
+    <text class="rx-event-seq rx-mono" x="14" y="13">#27 · take</text>
+  </g><g class="rx-event" transform="translate(228 1205)" data-event-seq="27" role="button" tabindex="0" aria-label="Step 28 at 0. map: Map output. unsubscribe. observed">
+    <title>Step 28 at 0. map: Map output. unsubscribe. observed</title>
+    <rect class="rx-event-hit" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <rect class="rx-event-focus" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <circle class="rx-internal-ink" cx="0" cy="-3" r="7" fill-opacity="0.05" stroke-width="1"/><path class="rx-internal-ink" d="M -3 -6 L 3 0 M 3 -6 L -3 0" fill="none" stroke-width="1.5"/>
+    <text class="rx-event-label rx-mono" x="14" y="0">Map output</text>
+    <text class="rx-event-seq rx-mono" x="14" y="13">#28 · map</text>
+  </g><g class="rx-event" transform="translate(228 1242)" data-event-seq="28" role="button" tabindex="0" aria-label="Step 29 at 0. filter: Filter output. unsubscribe. observed">
+    <title>Step 29 at 0. filter: Filter output. unsubscribe. observed</title>
+    <rect class="rx-event-hit" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <rect class="rx-event-focus" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <circle class="rx-internal-ink" cx="0" cy="-3" r="7" fill-opacity="0.05" stroke-width="1"/><path class="rx-internal-ink" d="M -3 -6 L 3 0 M 3 -6 L -3 0" fill="none" stroke-width="1.5"/>
+    <text class="rx-event-label rx-mono" x="14" y="0">Filter output</text>
+    <text class="rx-event-seq rx-mono" x="14" y="13">#29 · filter</text>
+  </g>
+    <line class="rx-rule" x1="34" x2="1246" y1="1282" y2="1282"/>
+    <text class="rx-lane-title" x="35" y="1310">Resulting emissions</text>
+    <text class="rx-lane-desc" x="35" y="1327">What the subscriber receives</text><line class="rx-grid" x1="228" x2="228" y1="1287" y2="1491"/><line class="rx-grid" x1="377.5" x2="377.5" y1="1287" y2="1491"/><line class="rx-grid" x1="527" x2="527" y1="1287" y2="1491"/><line class="rx-grid" x1="676.5" x2="676.5" y1="1287" y2="1491"/><line class="rx-grid" x1="826" x2="826" y1="1287" y2="1491"/><line class="rx-grid" x1="975.5" x2="975.5" y1="1287" y2="1491"/><line class="rx-grid" x1="1125" x2="1125" y1="1287" y2="1491"/><g class="rx-event" transform="translate(228 1308)" data-event-seq="0" role="button" tabindex="0" aria-label="Step 1 at 0. sink: Observer. subscribe. observed">
+    <title>Step 1 at 0. sink: Observer. subscribe. observed</title>
+    <rect class="rx-event-hit" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <rect class="rx-event-focus" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <circle class="rx-result-ink" cx="0" cy="-3" r="7" fill-opacity="0.08" stroke-width="1.5"/><path class="rx-result-ink" d="M -3 -3 H 3 M 0 -6 V 0" fill="none" stroke-width="1.5"/>
+    <text class="rx-event-label rx-mono" x="14" y="0">Observer</text>
+    <text class="rx-event-seq rx-mono" x="14" y="13">#1 · sink</text>
+  </g><g class="rx-event" transform="translate(228 1345)" data-event-seq="12" role="button" tabindex="0" aria-label="Step 13 at 0. sink: Observer. next. observed. Value 10">
+    <title>Step 13 at 0. sink: Observer. next. observed. Value 10</title>
+    <rect class="rx-event-hit" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <rect class="rx-event-focus" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <circle class="rx-result-ink" cx="0" cy="-3" r="6" fill-opacity="1" stroke-width="1.5"/>
+    <text class="rx-event-label rx-mono" x="14" y="0">10</text>
+    <text class="rx-event-seq rx-mono" x="14" y="13">#13 · sink</text>
+  </g><g class="rx-event" transform="translate(228 1382)" data-event-seq="21" role="button" tabindex="0" aria-label="Step 22 at 0. sink: Observer. next. observed. Value 30">
+    <title>Step 22 at 0. sink: Observer. next. observed. Value 30</title>
+    <rect class="rx-event-hit" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <rect class="rx-event-focus" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <circle class="rx-result-ink" cx="0" cy="-3" r="6" fill-opacity="1" stroke-width="1.5"/>
+    <text class="rx-event-label rx-mono" x="14" y="0">30</text>
+    <text class="rx-event-seq rx-mono" x="14" y="13">#22 · sink</text>
+  </g><g class="rx-event" transform="translate(228 1419)" data-event-seq="24" role="button" tabindex="0" aria-label="Step 25 at 0. sink: Observer. complete. observed">
+    <title>Step 25 at 0. sink: Observer. complete. observed</title>
+    <rect class="rx-event-hit" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <rect class="rx-event-focus" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <circle class="rx-result-ink" cx="0" cy="-3" r="7" fill-opacity="0.08" stroke-width="1.5"/><path class="rx-result-ink" d="M -3 -3 L -1 -1 L 4 -6" fill="none" stroke-width="1.5"/>
+    <text class="rx-event-label rx-mono" x="14" y="0">Observer</text>
+    <text class="rx-event-seq rx-mono" x="14" y="13">#25 · sink</text>
+  </g><g class="rx-event" transform="translate(228 1456)" data-event-seq="25" role="button" tabindex="0" aria-label="Step 26 at 0. sink: Observer. unsubscribe. observed">
+    <title>Step 26 at 0. sink: Observer. unsubscribe. observed</title>
+    <rect class="rx-event-hit" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <rect class="rx-event-focus" x="-12" y="-14" width="150" height="34" rx="6"/>
+    <circle class="rx-result-ink" cx="0" cy="-3" r="7" fill-opacity="0.05" stroke-width="1"/><path class="rx-result-ink" d="M -3 -6 L 3 0 M 3 -6 L -3 0" fill="none" stroke-width="1.5"/>
+    <text class="rx-event-label rx-mono" x="14" y="0">Observer</text>
+    <text class="rx-event-seq rx-mono" x="14" y="13">#26 · sink</text>
+  </g><line class="rx-cursor" x1="228" x2="228" y1="272" y2="1496" pointer-events="none"/>
+      <rect class="rx-cursor-pill" x="222" y="277" width="124" height="21" rx="5"/>
+      <text class="rx-cursor-label rx-mono" x="284" y="291" text-anchor="middle">0 ms · #30</text>
+    <line class="rx-rule" x1="34" x2="1246" y1="1518" y2="1518"/>
+    <text class="rx-overline" x="34" y="1541">03 / SUBSCRIPTION LIFETIMES</text>
+    <text class="rx-small" x="1246" y="1541" text-anchor="end">+ start · ✓ complete · × cancelled · ! error · dashed = active</text><g data-subscription-id="sync-take:s0" data-lifetime-status="complete" aria-label="sync-take:s0, Observer, complete, #1 → #26">
+      <title>sync-take:s0; complete; #1 → #26</title>
+      <text class="rx-life-label rx-mono" x="35" y="1575">sync-take:s0</text>
+      <text class="rx-life-detail rx-mono" x="35" y="1588">Observer · #1 → #26</text>
+      <line class="rx-rule" x1="228" x2="1125" y1="1573" y2="1573"/>
+      <line class="rx-life rx-life-ended" x1="228" x2="230" y1="1573" y2="1573"/>
+      <circle cx="228" cy="1573" r="3" fill="#fffefa" stroke="#69987c" stroke-width="1.4"/>
+      <circle cx="228" cy="1573" r="6" fill="#fffefa" stroke="#608770" stroke-width="1.5"/><path d="M 225 1573 L 227 1575 L 231 1570" fill="none" stroke="#608770" stroke-width="1.5"/>
+      <text class="rx-life-detail rx-mono" x="241" y="1577">complete</text>
+    </g><g data-subscription-id="sync-take:s1" data-lifetime-status="complete" aria-label="sync-take:s1, take(2), complete, #2 → #27">
+      <title>sync-take:s1; parent sync-take:s0; complete; #2 → #27</title>
+      <text class="rx-life-label rx-mono" x="35" y="1611">↳ sync-take:s1</text>
+      <text class="rx-life-detail rx-mono" x="35" y="1624">take(2) · #2 → #27</text>
+      <line class="rx-rule" x1="228" x2="1125" y1="1609" y2="1609"/>
+      <line class="rx-life rx-life-ended" x1="228" x2="230" y1="1609" y2="1609"/>
+      <circle cx="228" cy="1609" r="3" fill="#fffefa" stroke="#69987c" stroke-width="1.4"/>
+      <circle cx="228" cy="1609" r="6" fill="#fffefa" stroke="#608770" stroke-width="1.5"/><path d="M 225 1609 L 227 1611 L 231 1606" fill="none" stroke="#608770" stroke-width="1.5"/>
+      <text class="rx-life-detail rx-mono" x="241" y="1613">complete</text>
+    </g><g data-subscription-id="sync-take:s2" data-lifetime-status="cancelled" aria-label="sync-take:s2, map(timesTen), cancelled, #4 → #28">
+      <title>sync-take:s2; parent sync-take:s1; cancelled; #4 → #28</title>
+      <text class="rx-life-label rx-mono" x="35" y="1647">↳ sync-take:s2</text>
+      <text class="rx-life-detail rx-mono" x="35" y="1660">map(timesTen) · #4 → #28</text>
+      <line class="rx-rule" x1="228" x2="1125" y1="1645" y2="1645"/>
+      <line class="rx-life rx-life-cancelled" x1="228" x2="230" y1="1645" y2="1645"/>
+      <circle cx="228" cy="1645" r="3" fill="#fffefa" stroke="#69987c" stroke-width="1.4"/>
+      <path d="M 224 1640 L 232 1648 M 232 1640 L 224 1648" fill="none" stroke="#aa713a" stroke-width="2"/>
+      <text class="rx-life-detail rx-mono" x="241" y="1649">cancelled</text>
+    </g><g data-subscription-id="sync-take:s3" data-lifetime-status="cancelled" aria-label="sync-take:s3, filter(isOdd), cancelled, #5 → #29">
+      <title>sync-take:s3; parent sync-take:s2; cancelled; #5 → #29</title>
+      <text class="rx-life-label rx-mono" x="35" y="1683">↳ sync-take:s3</text>
+      <text class="rx-life-detail rx-mono" x="35" y="1696">filter(isOdd) · #5 → #29</text>
+      <line class="rx-rule" x1="228" x2="1125" y1="1681" y2="1681"/>
+      <line class="rx-life rx-life-cancelled" x1="228" x2="230" y1="1681" y2="1681"/>
+      <circle cx="228" cy="1681" r="3" fill="#fffefa" stroke="#69987c" stroke-width="1.4"/>
+      <path d="M 224 1676 L 232 1684 M 232 1676 L 224 1684" fill="none" stroke="#aa713a" stroke-width="2"/>
+      <text class="rx-life-detail rx-mono" x="241" y="1685">cancelled</text>
+    </g><g data-subscription-id="sync-take:s4" data-lifetime-status="cancelled" aria-label="sync-take:s4, of(1, 2, 3, 4, 5), cancelled, #6 → #30">
+      <title>sync-take:s4; parent sync-take:s3; cancelled; #6 → #30</title>
+      <text class="rx-life-label rx-mono" x="35" y="1719">↳ sync-take:s4</text>
+      <text class="rx-life-detail rx-mono" x="35" y="1732">of(1, 2, 3, 4, 5) · #6 → #30</text>
+      <line class="rx-rule" x1="228" x2="1125" y1="1717" y2="1717"/>
+      <line class="rx-life rx-life-cancelled" x1="228" x2="230" y1="1717" y2="1717"/>
+      <circle cx="228" cy="1717" r="3" fill="#fffefa" stroke="#69987c" stroke-width="1.4"/>
+      <path d="M 224 1712 L 232 1720 M 232 1712 L 224 1720" fill="none" stroke="#aa713a" stroke-width="2"/>
+      <text class="rx-life-detail rx-mono" x="241" y="1721">cancelled</text>
+    </g>
+    <line class="rx-rule" x1="34" x2="1246" y1="1790" y2="1790"/>
+    <text class="rx-footer" x="35" y="1810">Every marker is one event. Same-time markers are stacked; # preserves their exact order.</text>
+    <text class="rx-footer rx-mono" x="1245" y="1810" text-anchor="end">Synchronous execution · RxJS 7.8.2 · ms</text></g>
+  </svg>
